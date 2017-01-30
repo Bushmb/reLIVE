@@ -1,0 +1,14 @@
+{
+  "name": "relive",
+  "version": "1.0.0",
+  "description": "app to listen to setlists from concerts and view photos and lyrics",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Mike Bush",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

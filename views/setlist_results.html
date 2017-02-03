@@ -1,0 +1,30 @@
+<% include header.html %>
+ 
+<strong>Search Results</strong>
+<ul class="setlist">
+ 	<% results.forEach(function(msgObj){ %>
+ 			<% if (msgObj.songs) { %>
+ 			<h3><%= msgObj.artistName %> - <%= msgObj.eventDate %></h3>
+ 			<h4><%= msgObj.venueName %></h4>
+ 				<% for (var i = 0; i < msgObj.songs.length; i++) { %>
+ 					<li ><%= msgObj.songs[i] %> <button class="btn" type="button" data-artist="<%= msgObj.artistName %>" data-song="<%= msgObj.songs[i] %>">Play Song</button> </li>
+ 				<% } %>
+ 			<!-- <button type"button" id="play_setlist">Play Setlist</button> -->
+ 			<% } %>
+  	<% }) %>
+</ul>
+
+<% include footer.html %>
+
+<!-- <% results.forEach(function(msgObj){ %>
+  <li data-band-id="<%= msgObj.artistMbid %>"><%= msgObj.artistName %> whose id is: <%= msgObj.artistMbid %></li>
+<% }) %>
+<input type="button" onclick="location.href='/setlists/';" value="Go to Google" /> -->
+
+<!-- <form action="#" class="js-search-form">
+	<div class="search">
+	<span>Band Name :</span>
+	<input type="text" id="bandname" placeholder="eg. Rolling Stones">
+	<button type="submit">Search</button>
+	</div>
+</form> -->

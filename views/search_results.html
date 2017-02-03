@@ -1,0 +1,28 @@
+<% include header.html %>
+ 
+<strong>Search Results</strong>
+<!-- <ul>
+ 	<% results.forEach(function(msgObj){ %>
+    	<li data-band-id="<%= msgObj.artistMbid %>"><%= msgObj.artistName %> whose id is: <%= msgObj.artistMbid %></li>
+  	<% }) %>
+</ul> -->
+<ul class="artist-results">
+	<% results.forEach(function(msgObj){ %>
+
+		<li><img src="<%= msgObj.image %>"><input type="button" class="setListApi" value="<%= msgObj.artistName %>" data-mbid="<%= msgObj.artistMbid %>"/></li>
+		
+	<% }) %>
+</ul>
+<!-- </ul>
+	<% results.forEach(function(msgObj){ %>
+		<li>
+			<a href="/setlist/<%= msgObj.artistMbid %>"><%= msgObj.artistName %></a>
+		</li>
+	<% }) %>
+<ul>  -->
+<% include footer.html %>
+
+<!-- <% results.forEach(function(msgObj){ %>
+  <li data-band-id="<%= msgObj.artistMbid %>"><%= msgObj.artistName %> whose id is: <%= msgObj.artistMbid %></li>
+<% }) %>
+<input type="button" onclick="location.href='/setlists/';" value="Go to Google" /> -->

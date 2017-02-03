@@ -9,7 +9,12 @@
   "author": "Mike Bush",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1"
+    "async": "^2.1.4",
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "request": "^2.79.0",
+    "spotify-web-api-node": "^2.3.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",

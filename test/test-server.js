@@ -7,7 +7,7 @@ const server = require('../server');
 const should = chai.should();
 const app = server.app;
 
-chai.use(chai.Http);
+chai.use(chaiHttp);
 
 describe('server response for index', function() {
 
